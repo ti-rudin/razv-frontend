@@ -17,13 +17,13 @@
 		</svg>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}>
-				<a href="/">Home</a>
+				<a href="/">Главная</a>
 			</li>
 			<li class:active={$page.url.pathname === '/about'}>
-				<a href="/about">About</a>
+				<a href="/about">Отчеты</a>
 			</li>
 			<li class:active={$page.url.pathname.startsWith('/sverdle')}>
-				<a href="/sverdle">Sverdle</a>
+				<a href="/sverdle">Документы</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
