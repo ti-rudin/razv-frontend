@@ -4,6 +4,9 @@
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	export let data;
 	console.log(data.pikets.data.pikets.data)
+	let q;
+	$: console.log(q)
+	
 </script>
 
 <svelte:head>
@@ -14,9 +17,9 @@
 <section>
 
 {#each data.pikets.data.pikets.data as piket}
-<h1>{piket.attributes.Name}</h1>
 
-<Counter />
+
+<Counter countid={piket.attributes.Name}/>
 <br>
 {/each}
 
