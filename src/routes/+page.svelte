@@ -2,8 +2,7 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	export let data;
-	console.log(data.pikets.data.pikets.data)
+
 	let q;
 	$: console.log(q)
 	
@@ -15,15 +14,7 @@
 </svelte:head>
 
 <section>
-
-{#each data.pikets.data.pikets.data as piket}
-
-
-<Counter countid={piket.attributes.Name}/>
-<br>
-{/each}
-
-
+Сайт на реконструкции
 </section>
 
 <style>
